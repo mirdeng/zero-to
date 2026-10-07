@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="芜湖行健智能机器人有限公司 - 专注于工业机器人、智能装备研发与制造，为制造业提供智能自动化整体解决方案。">
+    <meta name="keywords" content="芜湖行健,智能机器人,工业机器人,自动化,智能制造">
+    <title>芜湖行健智能机器人有限公司 | 智能制造 行健致远</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" width="40" height="40">
+                        <defs>
+                            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#00d4ff"/>
+                                <stop offset="100%" stop-color="#1677ff"/>
+                            </linearGradient>
+                        </defs>
+                        <path d="M20 4 L34 12 L34 28 L20 36 L6 28 L6 12 Z" fill="none" stroke="url(#logoGrad)" stroke-width="2.5"/>
+                        <circle cx="20" cy="20" r="6" fill="url(#logoGrad)"/>
+                        <path d="M20 14 L20 4 M20 26 L20 36 M14 20 L6 20 M26 20 L34 20" stroke="url(#logoGrad)" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-cn">行健智能</span>
+                    <span class="logo-en">XINGJIAN ROBOTICS</span>
+                </div>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#home" class="nav-link active">首页</a>
+                <a href="#about" class="nav-link">关于我们</a>
+                <a href="#products" class="nav-link">产品中心</a>
+                <a href="#solutions" class="nav-link">解决方案</a>
+                <a href="#news" class="nav-link">新闻动态</a>
+                <a href="#contact" class="nav-link">联系我们</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary btn-sm">咨询合作</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 移动端菜单 -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" class="mobile-link">首页</a>
+        <a href="#about" class="mobile-link">关于我们</a>
+        <a href="#products" class="mobile-link">产品中心</a>
+        <a href="#solutions" class="mobile-link">解决方案</a>
+        <a href="#news" class="mobile-link">新闻动态</a>
+        <a href="#contact" class="mobile-link">联系我们</a>
+    </div>
+
+    <main>
+        <!-- 首页 Hero -->
+        <section class="hero" id="home">
+            <div class="hero-bg">
+                <div class="hero-grid"></div>
+                <div class="hero-glow hero-glow-1"></div>
+                <div class="hero-glow hero-glow-2"></div>
+            </div>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="hero-tag">智能制造 · 行健致远</span>
+                    <h1 class="hero-title">
+                        让智能机器人<br>
+                        <span class="gradient-text">驱动未来制造</span>
+                    </h1>
+                    <p class="hero-desc">
+                        芜湖行健智能机器人有限公司，专注于工业机器人核心技术研发与智能制造装备创新，
+                        为汽车、3C、新能源、物流等行业提供高效、可靠的自动化整体解决方案。
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#products" class="btn btn-primary">探索产品</a>
+                        <a href="#contact" class="btn btn-outline">免费方案咨询</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-num" data-target="120">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">专利技术</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num" data-target="500">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">服务客户</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num" data-target="30">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">行业覆盖</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="robot-illustration">
+                        <svg viewBox="0 0 400 400" width="100%" height="100%">
+                            <defs>
+                                <linearGradient id="robotGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#00d4ff"/>
+                                    <stop offset="100%" stop-color="#1677ff"/>
+                                </linearGradient>
+                                <linearGradient id="robotGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#7c3aed"/>
+                                    <stop offset="100%" stop-color="#1677ff"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- 机器人主体 -->
+                            <g class="robot-float">
+                                <ellipse cx="200" cy="340" rx="80" ry="15" fill="rgba(0,0,0,0.15)"/>
+                                <!-- 身体 -->
+                                <rect x="140" y="180" width="120" height="130" rx="20" fill="url(#robotGrad)" opacity="0.9"/>
+                                <rect x="155" y="200" width="90" height="60" rx="10" fill="#0a1628" opacity="0.4"/>
+                                <circle cx="200" cy="230" r="12" fill="#00d4ff" opacity="0.8"/>
+                                <!-- 头部 -->
+                                <rect x="155" y="110" width="90" height="80" rx="20" fill="url(#robotGrad2)"/>
+                                <rect x="168" y="130" width="64" height="30" rx="8" fill="#0a1628" opacity="0.5"/>
+                                <circle cx="188" cy="145" r="7" fill="#00d4ff"/>
+                                <circle cx="212" cy="145" r="7" fill="#00d4ff"/>
+                                <rect x="195" y="160" width="10" height="4" rx="2" fill="#00d4ff" opacity="0.7"/>
+                                <!-- 天线 -->
+                                <line x1="200" y1="110" x2="200" y2="85" stroke="url(#robotGrad)" stroke-width="3"/>
+                                <circle cx="200" cy="80" r="6" fill="#00d4ff"/>
+                                <!-- 手臂 -->
+                                <rect x="110" y="190" width="30" height="80" rx="15" fill="url(#robotGrad)" opacity="0.85"/>
+                                <rect x="260" y="190" width="30" height="80" rx="15" fill="url(#robotGrad)" opacity="0.85"/>
+                                <circle cx="125" cy="275" r="14" fill="url(#robotGrad2)"/>
+                                <circle cx="275" cy="275" r="14" fill="url(#robotGrad2)"/>
+                            </g>
+                            <!-- 环绕元素 -->
+                            <g class="rotate-slow" style="transform-origin: 200px 210px;">
+                                <circle cx="200" cy="210" r="160" fill="none" stroke="url(#robotGrad)" stroke-width="1" stroke-dasharray="4 8" opacity="0.5"/>
+                                <circle cx="360" cy="210" r="6" fill="#00d4ff"/>
+                                <circle cx="40" cy="210" r="6" fill="#7c3aed"/>
+                            </g>
+                            <g class="rotate-reverse" style="transform-origin: 200px 210px; animation-delay: -3s;">
+                                <circle cx="200" cy="210" r="130" fill="none" stroke="#7c3aed" stroke-width="1" stroke-dasharray="2 6" opacity="0.4"/>
+                                <circle cx="330" cy="210" r="4" fill="#7c3aed"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <span>向下滚动</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- 关于我们 -->
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">ABOUT US</span>
+                    <h2 class="section-title">关于行健智能</h2>
+                    <p class="section-sub">天行健，君子以自强不息 — 以核心技术驱动智能制造升级</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h3>专注智能机器人研发制造的高新技术企业</h3>
+                        <p>
+                            芜湖行健智能机器人有限公司成立于国家级机器人产业集聚区——安徽芜湖，
+                            是一家专注于工业机器人、智能装备及自动化产线研发、生产、销售与服务于一体的高新技术企业。
+                        </p>
+                        <p>
+                            公司汇聚了一批在机器人控制、机器视觉、运动规划等领域具有深厚积累的技术专家，
+                            拥有完全自主知识产权的核心控制算法与系统架构，产品广泛应用于汽车制造、3C电子、
+                            新能源、金属加工、物流仓储等多个行业。
+                        </p>
+                        <p>
+                            我们秉承"行健致远"的企业精神，以技术创新为引擎，以品质服务为根基，
+                            致力于成为国内领先、国际一流的智能制造整体解决方案提供商。
+                        </p>
+                        <div class="about-features">
+                            <div class="about-feature">
+                                <div class="feature-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>自主核心技术</h4>
+                                    <p>掌握机器人控制、视觉、运动规划等核心算法</p>
+                                </div>
+                            </div>
+                            <div class="about-feature">
+                                <div class="feature-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>品质可靠</h4>
+                                    <p>通过ISO9001质量管理体系认证，产品稳定可靠</p>
+                                </div>
+                            </div>
+                            <div class="about-feature">
+                                <div class="feature-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M12 6v6l4 2"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>高效服务</h4>
+                                    <p>7×24小时响应，全国服务网络快速到达现场</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-side">
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M9 12l2 2 4-4"/>
+                                    <circle cx="12" cy="12" r="10"/>
+                                </svg>
+                            </div>
+                            <h3>企业使命</h3>
+                            <p>以智能机器人技术赋能制造业，让生产更高效、更智能、更柔性。</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </div>
+                            <h3>企业愿景</h3>
+                            <p>成为国内领先、国际一流的智能制造整体解决方案提供商。</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2z"/>
+                                </svg>
+                            </div>
+                            <h3>核心价值观</h3>
+                            <p>创新驱动、品质为本、客户至上、合作共赢。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 产品中心 -->
+        <section class="section products" id="products">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">PRODUCTS</span>
+                    <h2 class="section-title">产品中心</h2>
+                    <p class="section-sub">全系列工业机器人产品，覆盖多种应用场景</p>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-img" style="background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);">
+                            <svg viewBox="0 0 100 100" width="80" height="80" fill="none" stroke="#00d4ff" stroke-width="2">
+                                <circle cx="50" cy="20" r="8"/>
+                                <line x1="50" y1="28" x2="50" y2="50"/>
+                                <circle cx="50" cy="50" r="6"/>
+                                <line x1="50" y1="56" x2="30" y2="80"/>
+                                <line x1="50" y1="56" x2="70" y2="80"/>
+                                <circle cx="30" cy="80" r="4"/>
+                                <circle cx="70" cy="80" r="4"/>
+                            </svg>
+                        </div>
+                        <div class="product-info">
+                            <h3>六轴工业机器人</h3>
+                            <p class="product-desc">6自由度关节型机器人，负载3-500kg，重复定位精度±0.02mm，广泛用于焊接、搬运、装配。</p>
+                            <ul class="product-specs">
+                                <li>负载：3-500kg</li>
+                                <li>臂展：600-3000mm</li>
+                                <li>精度：±0.02mm</li>
+                            </ul>
+                            <a href="#contact" class="product-link">了解详情 →</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img" style="background: linear-gradient(135deg, #0a1628 0%, #2d1a5c 100%);">
+                            <svg viewBox="0 0 100 100" width="80" height="80" fill="none" stroke="#a78bfa" stroke-width="2">
+                                <rect x="20" y="30" width="60" height="40" rx="4"/>
+                                <circle cx="30" cy="75" r="6"/>
+                                <circle cx="70" cy="75" r="6"/>
+                                <rect x="30" y="20" width="40" height="12" rx="2"/>
+                                <line x1="40" y1="50" x2="60" y2="50"/>
+                            </svg>
+                        </div>
+                        <div class="product-info">
+                            <h3>AGV/AMR移动机器人</h3>
+                            <p class="product-desc">自主导航移动机器人，支持SLAM激光导航，最大负载2000kg，实现柔性物流自动化。</p>
+                            <ul class="product-specs">
+                                <li>导航：SLAM激光+视觉</li>
+                                <li>负载：100-2000kg</li>
+                                <li>速度：1.5m/s</li>
+                            </ul>
+                            <a href="#contact" class="product-link">了解详情 →</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img" style="background: linear-gradient(135deg, #0a1628 0%, #1a5c4a 100%);">
+                            <svg viewBox="0 0 100 100" width="80" height="80" fill="none" stroke="#34d399" stroke-width="2">
+                                <rect x="25" y="20" width="50" height="60" rx="4"/>
+                                <rect x="30" y="28" width="40" height="20" rx="2"/>
+                                <circle cx="40" cy="60" r="4"/>
+                                <circle cx="50" cy="60" r="4"/>
+                                <circle cx="60" cy="60" r="4"/>
+                                <line x1="35" y1="72" x2="65" y2="72"/>
+                            </svg>
+                        </div>
+                        <div class="product-info">
+                            <h3>协作机器人</h3>
+                            <p class="product-desc">人机协作机器人，安全可靠，即插即用，无需安全围栏，适用于精密装配与柔性产线。</p>
+                            <ul class="product-specs">
+                                <li>负载：3-20kg</li>
+                                <li>关节：6轴</li>
+                                <li>安全：碰撞检测</li>
+                            </ul>
+                            <a href="#contact" class="product-link">了解详情 →</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img" style="background: linear-gradient(135deg, #0a1628 0%, #5c1a3a 100%);">
+                            <svg viewBox="0 0 100 100" width="80" height="80" fill="none" stroke="#f472b6" stroke-width="2">
+                                <rect x="15" y="40" width="70" height="30" rx="4"/>
+                                <path d="M20 40 L35 25 L65 25 L80 40"/>
+                                <circle cx="30" cy="55" r="3"/>
+                                <circle cx="50" cy="55" r="3"/>
+                                <circle cx="70" cy="55" r="3"/>
+                                <line x1="15" y1="70" x2="85" y2="70"/>
+                            </svg>
+                        </div>
+                        <div class="product-info">
+                            <h3>SCARA机器人</h3>
+                            <p class="product-desc">水平多关节机器人，速度快、精度高，专为3C电子、新能源等行业高速拾取装配设计。</p>
+                            <ul class="product-specs">
+                                <li>负载：3-12kg</li>
+                                <li>臂展：400-1000mm</li>
+                                <li>速度：0.32s/循环</li>
+                            </ul>
+                            <a href="#contact" class="product-link">了解详情 →</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img" style="background: linear-gradient(135deg, #0a1628 0%, #5c4a1a 100%);">
+                            <svg viewBox="0 0 100 100" width="80" height="80" fill="none" stroke="#fbbf24" stroke-width="2">
+                                <rect x="20" y="30" width="60" height="50" rx="4"/>
+                                <line x1="20" y1="45" x2="80" y2="45"/>
+                                <rect x="28" y="52" width="20" height="12" rx="1"/>
+                                <rect x="52" y="52" width="20" height="12" rx="1"/>
+                                <circle cx="25" cy="80" r="4"/>
+                                <circle cx="75" cy="80" r="4"/>
+                            </svg>
+                        </div>
+                        <div class="product-info">
+                            <h3>智能视觉系统</h3>
+                            <p class="product-desc">基于深度学习的机器视觉系统，支持定位、检测、识别、测量，适配各类工业场景。</p>
+                            <ul class="product-specs">
+                                <li>类型：2D/3D视觉</li>
+                                <li>精度：亚像素级</li>
+                                <li>框架：深度学习</li>
+                            </ul>
+                            <a href="#contact" class="product-link">了解详情 →</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img" style="background: linear-gradient(135deg, #0a1628 0%, #1a4a5c 100%);">
+                            <svg viewBox="0 0 100 100" width="80" height="80" fill="none" stroke="#22d3ee" stroke-width="2">
+                                <rect x="10" y="20" width="80" height="60" rx="4"/>
+                                <rect x="18" y="28" width="30" height="20" rx="2"/>
+                                <rect x="52" y="28" width="30" height="20" rx="2"/>
+                                <rect x="18" y="52" width="64" height="20" rx="2"/>
+                                <line x1="22" y1="60" x2="78" y2="60"/>
+                            </svg>
+                        </div>
+                        <div class="product-info">
+                            <h3>自动化产线集成</h3>
+                            <p class="product-desc">提供从方案设计、设备制造到安装调试的整线集成服务，实现生产全流程自动化。</p>
+                            <ul class="product-specs">
+                                <li>方案：定制化设计</li>
+                                <li>周期：快速交付</li>
+                                <li>服务：交钥匙工程</li>
+                            </ul>
+                            <a href="#contact" class="product-link">了解详情 →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 解决方案 -->
+        <section class="section solutions" id="solutions">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">SOLUTIONS</span>
+                    <h2 class="section-title">行业解决方案</h2>
+                    <p class="section-sub">深耕行业场景，为客户创造可量化的价值</p>
+                </div>
+                <div class="solutions-grid">
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 002 12v4c0 .6.4 1 1 1h2"/>
+                                <circle cx="7" cy="17" r="2"/>
+                                <path d="M9 17h6"/>
+                                <circle cx="17" cy="17" r="2"/>
+                            </svg>
+                        </div>
+                        <h3>汽车制造</h3>
+                        <p>提供焊装、涂装、总装全流程自动化方案，涵盖车身焊接、零部件搬运、喷涂等工艺，大幅提升生产效率与品质一致性。</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                <path d="M2 8h20M6 4v16"/>
+                            </svg>
+                        </div>
+                        <h3>3C电子</h3>
+                        <p>面向手机、电脑、平板等消费电子行业，提供高速精密装配、检测、包装自动化解决方案，满足柔性生产需求。</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <rect x="2" y="7" width="18" height="13" rx="2"/>
+                                <path d="M6 7V5a2 2 0 012-2h8a2 2 0 012 2v2"/>
+                                <path d="M12 12v3M9 13.5h6"/>
+                            </svg>
+                        </div>
+                        <h3>新能源</h3>
+                        <p>针对动力电池、光伏、储能等新能源产业，提供电芯装配、模组PACK、检测等关键工序自动化装备。</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+                                <path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/>
+                            </svg>
+                        </div>
+                        <h3>金属加工</h3>
+                        <p>为锻造、铸造、机加工等金属加工企业提供上下料、打磨、搬运自动化方案，实现无人化生产车间。</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                            </svg>
+                        </div>
+                        <h3>物流仓储</h3>
+                        <p>以AGV/AMR移动机器人为核心，结合智能调度系统，打造高效柔性的智能仓储与物流配送解决方案。</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+                            </svg>
+                        </div>
+                        <h3>定制化方案</h3>
+                        <p>根据客户个性化需求，提供从工艺分析、方案设计到设备制造、安装调试的一站式定制化智能制造服务。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 核心优势 -->
+        <section class="section advantages">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">ADVANTAGES</span>
+                    <h2 class="section-title">为什么选择行健</h2>
+                    <p class="section-sub">技术、产品、服务三位一体，助力客户智能化升级</p>
+                </div>
+                <div class="advantages-grid">
+                    <div class="advantage-item">
+                        <div class="advantage-num">01</div>
+                        <h3>核心技术自主可控</h3>
+                        <p>自主研发控制器、伺服驱动、运动规划算法，核心软硬件完全自主知识产权，摆脱进口依赖。</p>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-num">02</div>
+                        <h3>高性价比产品</h3>
+                        <p>本土化研发与生产，在保证国际品质的同时，提供更具竞争力的价格与更快的交付周期。</p>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-num">03</div>
+                        <h3>深度行业Know-how</h3>
+                        <p>深耕制造业多年，深刻理解各行业工艺特点，方案设计更贴合客户实际生产需求。</p>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-num">04</div>
+                        <h3>全生命周期服务</h3>
+                        <p>从售前咨询、方案设计、项目实施到售后维护，提供全生命周期的专业服务保障。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 新闻动态 -->
+        <section class="section news" id="news">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">NEWS</span>
+                    <h2 class="section-title">新闻动态</h2>
+                    <p class="section-sub">了解行健智能最新资讯与行业洞察</p>
+                </div>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <div class="news-img" style="background: linear-gradient(135deg, #1677ff 0%, #00d4ff 100%);">
+                            <span class="news-date">10<span>月</span></span>
+                        </div>
+                        <div class="news-content">
+                            <span class="news-category">公司新闻</span>
+                            <h3>行健智能完成B轮融资，加速机器人核心技术研发</h3>
+                            <p>近日，芜湖行健智能机器人有限公司宣布完成数亿元B轮融资，本轮融资将主要用于核心技术研发、产能扩建及市场拓展……</p>
+                            <a href="#" class="news-link">阅读全文 →</a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-img" style="background: linear-gradient(135deg, #7c3aed 0%, #a78bfa 100%);">
+                            <span class="news-date">09<span>月</span></span>
+                        </div>
+                        <div class="news-content">
+                            <span class="news-category">产品发布</span>
+                            <h3>新一代高速SCARA机器人正式发布，循环时间缩短30%</h3>
+                            <p>行健智能正式发布新一代SR系列高速SCARA机器人，通过优化运动控制算法与结构设计，标准循环时间达到0.32秒……</p>
+                            <a href="#" class="news-link">阅读全文 →</a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-img" style="background: linear-gradient(135deg, #059669 0%, #34d399 100%);">
+                            <span class="news-date">09<span>月</span></span>
+                        </div>
+                        <div class="news-content">
+                            <span class="news-category">行业动态</span>
+                            <h3>行健智能亮相中国国际工业博览会，展示智能制造整体方案</h3>
+                            <p>在第23届中国国际工业博览会上，行健智能携六轴机器人、协作机器人、AGV等全系列产品亮相，受到广泛关注……</p>
+                            <a href="#" class="news-link">阅读全文 →</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="news-more">
+                    <a href="#" class="btn btn-outline">查看更多新闻</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系我们 -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">CONTACT</span>
+                    <h2 class="section-title">联系我们</h2>
+                    <p class="section-sub">期待与您携手，共创智能制造新未来</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>芜湖行健智能机器人有限公司</h3>
+                        <p>无论您有任何产品咨询或方案需求，欢迎随时与我们联系，我们将竭诚为您服务。</p>
+                        <ul class="contact-list">
+                            <li>
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="contact-label">公司地址</span>
+                                    <span class="contact-value">安徽省芜湖市鸠江经济开发区机器人产业园</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="contact-label">联系电话</span>
+                                    <span class="contact-value">400-888-6688</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="contact-label">电子邮箱</span>
+                                    <span class="contact-value">contact@xingjian-robot.com</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M12 6v6l4 2"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="contact-label">工作时间</span>
+                                    <span class="contact-value">周一至周五 8:30 - 18:00</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact-form-wrap">
+                        <form class="contact-form" id="contactForm">
+                            <h3>在线咨询</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">您的姓名 *</label>
+                                    <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">联系电话 *</label>
+                                    <input type="tel" id="phone" name="phone" required placeholder="请输入您的电话">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="company">公司名称</label>
+                                    <input type="text" id="company" name="company" placeholder="请输入公司名称">
+                                </div>
+                                <div class="form-group">
+                                    <label for="product">意向产品</label>
+                                    <select id="product" name="product">
+                                        <option value="">请选择意向产品</option>
+                                        <option value="六轴工业机器人">六轴工业机器人</option>
+                                        <option value="AGV/AMR移动机器人">AGV/AMR移动机器人</option>
+                                        <option value="协作机器人">协作机器人</option>
+                                        <option value="SCARA机器人">SCARA机器人</option>
+                                        <option value="智能视觉系统">智能视觉系统</option>
+                                        <option value="自动化产线集成">自动化产线集成</option>
+                                        <option value="定制化方案">定制化方案</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">需求描述</label>
+                                <textarea id="message" name="message" rows="4" placeholder="请简要描述您的需求，我们将尽快与您联系"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">提交咨询</button>
+                            <p class="form-tip">我们承诺保护您的隐私，您的信息仅用于业务沟通。</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col footer-brand">
+                <div class="footer-logo">
+                    <svg viewBox="0 0 40 40" width="36" height="36">
+                        <defs>
+                            <linearGradient id="footerLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#00d4ff"/>
+                                <stop offset="100%" stop-color="#1677ff"/>
+                            </linearGradient>
+                        </defs>
+                        <path d="M20 4 L34 12 L34 28 L20 36 L6 28 L6 12 Z" fill="none" stroke="url(#footerLogoGrad)" stroke-width="2.5"/>
+                        <circle cx="20" cy="20" r="6" fill="url(#footerLogoGrad)"/>
+                    </svg>
+                    <span>行健智能</span>
+                </div>
+                <p>芜湖行健智能机器人有限公司，专注于工业机器人核心技术研发与智能制造装备创新，助力制造业智能化升级。</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="微信"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M8.691 2C4.768 2 1.5 4.734 1.5 8.124c0 1.988 1.106 3.759 2.83 4.93l-.707 2.12 2.474-1.237c.808.202 1.516.404 2.304.404.202 0 .404 0 .606-.02-.12-.404-.18-.808-.18-1.212 0-3.23 2.83-5.857 6.263-5.857.202 0 .404.02.606.02C15.07 4.337 12.13 2 8.691 2zm-2.424 3.434c.505 0 .909.404.909.909s-.404.909-.909.909-.909-.404-.909-.909.404-.909.909-.909zm4.646 0c.505 0 .909.404.909.909s-.404.909-.909.909-.909-.404-.909-.909.404-.909.909-.909zm5.655 3.23c-2.828 0-5.151 2.222-5.151 4.949s2.323 4.949 5.151 4.949c.606 0 1.11-.101 1.615-.303l1.919.909-.505-1.616c1.313-.909 2.121-2.323 2.121-3.939 0-2.727-2.323-4.949-5.151-4.949zm-1.615 2.222c.303 0 .505.202.505.505s-.202.505-.505.505-.505-.202-.505-.505.202-.505.505-.505zm3.232 0c.303 0 .505.202.505.505s-.202.505-.505.505-.505-.202-.505-.505.202-.505.505-.505z"/></svg></a>
+                    <a href="#" aria-label="微博"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M10.098 20.323c-3.977.391-7.414-1.406-7.672-4.02-.259-2.609 2.759-5.047 6.74-5.441 3.979-.394 7.413 1.404 7.671 4.018.259 2.6-2.759 5.049-6.737 5.439l-.002.004zM9.05 17.219c-.384.616-1.208.884-1.829.602-.612-.279-.793-.991-.406-1.593.379-.595 1.176-.861 1.793-.601.622.263.82.972.442 1.592zm1.27-1.627c-.141.237-.449.353-.689.253-.236-.09-.313-.361-.177-.586.138-.227.436-.346.672-.24.239.09.315.36.18.573h.014zm.176-2.719c-1.893-.493-4.033.45-4.857 2.118-.836 1.704-.026 3.591 1.886 4.21 1.983.642 4.318-.341 5.132-2.179.8-1.793-.201-3.642-2.161-4.149zm7.563-1.224c-.346-.105-.57-.18-.405-.649.375-1.061.415-1.976.003-2.649-.77-1.253-2.884-1.188-5.302-.036 0 0-.761.334-.567-.271.37-1.216.313-2.234-.273-2.81-1.326-1.307-4.879.052-7.94 3.029C1.813 10.64 0 13.102 0 15.166c0 3.978 5.09 6.381 10.081 6.381 6.534 0 10.821-3.786 10.821-6.801 0-1.815-1.526-2.846-2.843-3.097zm1.637-6.094c-.815-.897-1.994-1.219-3.096-.943-.354.088-.564.447-.474.8.088.353.443.565.798.477.574-.143 1.188.026 1.615.496.43.472.559 1.099.361 1.652-.122.342.05.723.393.846.344.122.724-.05.846-.393.397-1.115.142-2.374-.643-3.235l-.004-.003zm-2.372 2.465c-.267-.293-.655-.402-1.01-.312-.308.077-.491.385-.413.692.078.308.384.493.693.415.121-.03.229-.091.309-.177.08-.086.139-.197.165-.321.03-.148-.021-.272-.144-.297z"/></svg></a>
+                    <a href="#" aria-label="领英"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>产品中心</h4>
+                <ul>
+                    <li><a href="#products">六轴工业机器人</a></li>
+                    <li><a href="#products">协作机器人</a></li>
+                    <li><a href="#products">SCARA机器人</a></li>
+                    <li><a href="#products">AGV/AMR移动机器人</a></li>
+                    <li><a href="#products">智能视觉系统</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>解决方案</h4>
+                <ul>
+                    <li><a href="#solutions">汽车制造</a></li>
+                    <li><a href="#solutions">3C电子</a></li>
+                    <li><a href="#solutions">新能源</a></li>
+                    <li><a href="#solutions">金属加工</a></li>
+                    <li><a href="#solutions">物流仓储</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>关于我们</h4>
+                <ul>
+                    <li><a href="#about">公司简介</a></li>
+                    <li><a href="#news">新闻动态</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                    <li><a href="#">加入我们</a></li>
+                    <li><a href="#">法律声明</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>© 2024 芜湖行健智能机器人有限公司 版权所有</p>
+                <p>皖ICP备XXXXXXXX号 | 皖公网安备XXXXXXXXXXXXXX号</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部 -->
+    <button class="back-top" id="backTop" aria-label="回到顶部">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="18 15 12 9 6 15"/>
+        </svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
